@@ -49,7 +49,7 @@ integrations:
       token: 'Z2hwXzJ4Z0JuU0Q3dlE5TlBjemxqTTRFSmtoOFp2QkRHWTJzbjhYSg=='
     
     - host: github.com
-      rawBaseUrl: https://github.com/MarioVega1991/BackstageMario2
+      rawBaseUrl: https://github.com/MarioVega1991/BackstageMario
       token: 'Z2hwXzJ4Z0JuU0Q3dlE5TlBjemxqTTRFSmtoOFp2QkRHWTJzbjhYSg=='
 
 proxy:
