@@ -49,7 +49,7 @@ integrations:
       token: 'Z2hwXzJ4Z0JuU0Q3dlE5TlBjemxqTTRFSmtoOFp2QkRHWTJzbjhYSg=='
     
     - host: github.com
-      rawBaseUrl: https://github.com/MarioVega1991/BackstageMario
+      rawBaseUrl: https://github.com/MarioVega1991/BackstageMario2
       token: 'Z2hwXzJ4Z0JuU0Q3dlE5TlBjemxqTTRFSmtoOFp2QkRHWTJzbjhYSg=='
 
 proxy:
@@ -97,7 +97,7 @@ catalog:
     github:
       # the provider ID can be any camelCase string
       providerId:
-        organization: 'MarioVega1991/BackstageMario' # string
+        organization: 'MarioVega1991/BackstageMario2' # string
         catalogPath: '/catalog-info.yaml' # string
         filters:
           branch: 'main' # string
@@ -120,7 +120,7 @@ catalog:
           branch: 'develop' # optional string
           repository: '.*' # optional Regex
       topicProviderId:
-        organization: 'MarioVega1991/BackstageMario' # string
+        organization: 'MarioVega1991/BackstageMario2' # string
         catalogPath: '/catalog-info.yaml' # string
         filters:
           branch: 'main' # string
@@ -129,7 +129,7 @@ catalog:
             include:
               - 'backstage-exclude'
       topicFilterProviderId:
-        organization: 'MarioVega1991/BackstageMario' # string
+        organization: 'MarioVega1991/BackstageMario2' # string
         catalogPath: '/catalog-info.yaml' # string
         filters:
           branch: 'main' # string
@@ -138,14 +138,14 @@ catalog:
             include: ['backstage-include'] # optional array of strings
             exclude: ['experiments'] # optional array of strings
       validateLocationsExist:
-        organization: 'MarioVega1991/BackstageMario' # string
+        organization: 'MarioVega1991/BackstageMario2' # string
         catalogPath: '/catalog-info.yaml' # string
         filters:
           branch: 'main' # string
           repository: '.*' # Regex
         validateLocationsExist: true # optional boolean
       visibilityProviderId:
-        organization: 'MarioVega1991/BackstageMario' # string
+        organization: 'MarioVega1991/BackstageMario2' # string
         catalogPath: '/catalog-info.yaml' # string
         filters:
           visibility:
@@ -153,7 +153,7 @@ catalog:
             - internal
       enterpriseProviderId:
         host: github.com
-        organization: 'MarioVega1991/BackstageMario' # string
+        organization: 'MarioVega1991/BackstageMario2' # string
         catalogPath: '/catalog-info.yaml' # string
   import:
     entityFilename: catalog-info.yaml
