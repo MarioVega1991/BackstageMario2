@@ -161,13 +161,13 @@ catalog:
   locations:
     # Local example organizational data
     - type: url
-      target: https://github.com/MarioVega1991/BackstageMario/blob/main/catalog-model/artist-lookup-component.yaml
+      target: https://github.com/MarioVega1991/BackstageMario2/blob/main/catalog-model/artist-lookup-component.yaml
 
     - type: url
-      target: https://github.com/MarioVega1991/BackstageMario/blob/main/catalog-model/my-template.yaml
+      target: https://github.com/MarioVega1991/BackstageMario2/blob/main/catalog-model/my-template.yaml
 
     - type: url
-      target: https://github.com/MarioVega1991/BackstageMario/blob/main/catalog-model/m-template.yaml
+      target: https://github.com/MarioVega1991/BackstageMario2/blob/main/catalog-model/m-template.yaml
     ## Uncomment these lines to add more example data
     # - type: url
     #   target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/all.yaml
