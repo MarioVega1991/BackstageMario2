@@ -67,7 +67,7 @@ techdocs:
   publisher:
     type: 'local'
   generator:
-    runIn: 'local' #'docker' # Alternatives - 'local'
+    runIn: 'docker' #'docker' # Alternatives - 'local'
     #type: 'azureBlobStorage' # Alternatives - 'googleGcs' or 'awsS3'. Read documentation for using alternatives.
     #azureBlobStorage:
     # containerName: 'container-backstagepoc'
