@@ -44,13 +44,18 @@ backend:
 integrations:
   github:
     - host: github.com
-      # This is a Personal Access Token or PAT from GitHub. You can find out how to generate this token, and more information
-      # about setting up the GitHub integration here: https://backstage.io/docs/getting-started/configuration#setting-up-a-github-integration
-      token: Z2hwXzJ4Z0JuU0Q3dlE5TlBjemxqTTRFSmtoOFp2QkRHWTJzbjhYSg==
-    
-    - host: github.com
       rawBaseUrl: https://github.com/MarioVega1991/BackstageMario2
-      token: Z2hwXzJ4Z0JuU0Q3dlE5TlBjemxqTTRFSmtoOFp2QkRHWTJzbjhYSg==
+      token: 'Z2hwX2hiWUptejlBWGk5cEJrRG54Q0RWcE1oaFBUcGhxaTNIVjN4OQ=='
+#    - host: github.com
+#      # This is a Personal Access Token or PAT from GitHub. You can find out how to generate this token, and more information
+#      # about setting up the GitHub integration here: https://backstage.io/docs/getting-started/configuration#setting-up-a-github-integration
+#      token: 'Z2hwX2hiWUptejlBWGk5cEJrRG54Q0RWcE1oaFBUcGhxaTNIVjN4OQ=='
+    
+#    - host: github.com
+#      rawBaseUrl: https://github.com/MarioVega1991/BackstageMario2
+#      token: 'Z2hwX2hiWUptejlBWGk5cEJrRG54Q0RWcE1oaFBUcGhxaTNIVjN4OQ=='
+
+    
 
 proxy:
   ### Example for how to add a proxy endpoint for the frontend.
@@ -108,13 +113,13 @@ catalog:
           # supports ISO duration, "human duration" as used in code
           timeout: { minutes: 3 }
       customProviderId:
-        organization: 'new-org' # string
+        organization: 'MarioVega1991/BackstageMario2' # string
         catalogPath: '/custom/path/catalog-info.yaml' # string
         filters: # optional filters
           branch: 'develop' # optional string
           repository: '.*' # optional Regex
       wildcardProviderId:
-        organization: 'new-org' # string
+        organization: 'MarioVega1991/BackstageMario2' # string
         catalogPath: '/groups/**/*.yaml' # this will search all folders for files that end in .yaml
         filters: # optional filters
           branch: 'develop' # optional string
@@ -160,14 +165,20 @@ catalog:
     pullRequestBranchName: backstage-integration
   locations:
     # Local example organizational data
-    - type: file
-      target: ../../catalog-model/artist-lookup-component.yaml
+
+    - type: url
+      target: https://github.com/MarioVega1991/BackstageMario2/blob/main/catalog-model/artist-lookup-component.yaml
+    #- type: file
+      #target: ../../catalog-model/artist-lookup-component.yaml
 
     - type: file
       target: ../../catalog-model/my-template.yaml
 
     - type: file
       target: ../../catalog-model/m-template.yaml
+    
+    - type: file
+      target: ../../catalog-model/doc-template.yaml
     ## Uncomment these lines to add more example data
     # - type: url
     #   target: https://github.com/backstage/backstage/blob/master/packages/catalog-model/examples/all.yaml
