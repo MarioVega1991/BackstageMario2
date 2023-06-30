@@ -44,7 +44,7 @@ backend:
 integrations:
   github:
     - host: github.com
-      token: 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
+      #token: 
       repos:
         - owner: MarioVega1991
           name: BackstageMario2
@@ -105,7 +105,7 @@ catalog:
     github:
       # the provider ID can be any camelCase string
       providerId:
-        organization: 'MarioVega1991/BackstageMario2' # string
+        organization: 'backstage' # string
         catalogPath: '/catalog-info.yaml' # string
         filters:
           branch: 'main' # string
@@ -128,16 +128,13 @@ catalog:
           branch: 'develop' # optional string
           repository: '.*' # optional Regex
       topicProviderId:
-        organization: 'MarioVega1991/BackstageMario2' # string
+        organization: 'backstage' # string
         catalogPath: '/catalog-info.yaml' # string
         filters:
           branch: 'main' # string
           repository: '.*' # Regex
-          topic:
-            include:
-              - 'backstage-exclude'
       topicFilterProviderId:
-        organization: 'MarioVega1991/BackstageMario2' # string
+        organization: 'backstage' # string
         catalogPath: '/catalog-info.yaml' # string
         filters:
           branch: 'main' # string
@@ -146,23 +143,19 @@ catalog:
             include: ['backstage-include'] # optional array of strings
             exclude: ['experiments'] # optional array of strings
       validateLocationsExist:
-        organization: 'MarioVega1991/BackstageMario2' # string
+        organization: 'backstage' # string
         catalogPath: '/catalog-info.yaml' # string
         filters:
           branch: 'main' # string
           repository: '.*' # Regex
         validateLocationsExist: true # optional boolean
       visibilityProviderId:
-        organization: 'MarioVega1991/BackstageMario2' # string
+        organization: 'backstage' # string
         catalogPath: '/catalog-info.yaml' # string
         filters:
           visibility:
             - public
             - internal
-      enterpriseProviderId:
-        host: github.com
-        organization: 'MarioVega1991/BackstageMario2' # string
-        catalogPath: '/catalog-info.yaml' # string
   import:
     entityFilename: catalog-info.yaml
     pullRequestBranchName: backstage-integration
