@@ -170,7 +170,7 @@ catalog:
     # Local example organizational data
 
     - type: url
-      target: https://github.com/MarioVega1991/BackstageMario2/blob/main/catalog-model/artist-lookup-component.yaml
+      target: https://github.com/MarioVega1991/BackstageMario2/blob/main/catalog-model/artist-lookup-componente.yaml
     #- type: file
       #target: ../../catalog-model/artist-lookup-component.yaml
 
