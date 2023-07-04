@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: mybackstage
-          image: mariovegara/backstage:1.0.24
+          image: mariovegara/backstage:1.0.05
           imagePullPolicy: 'Always'
           ports:
             - name: http
